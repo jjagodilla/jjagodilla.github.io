@@ -36,3 +36,5 @@ if(LOOKER_URL){
   const frame = document.getElementById('lookerFrame');
   if(frame) frame.src = LOOKER_URL;
 }
+
+
