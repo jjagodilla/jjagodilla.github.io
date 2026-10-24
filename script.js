@@ -1,3 +1,16 @@
+const basePath = window.location.pathname.includes('/MyPortfolio/') ? '/MyPortfolio' : '';
+const assetPath = (relativePath) => `${basePath}/${relativePath.replace(/^\//, '')}`;
+
+const cssLink = document.querySelector('link[rel="stylesheet"]');
+if (cssLink) {
+  cssLink.href = assetPath('style.css');
+}
+
+const image = document.querySelector('.profile-img');
+if (image) {
+  image.src = assetPath('images/profile.jpg');
+}
+
 // Basic interactions: year, simple form handler and iframe loader for Looker Studio
 document.getElementById('year').innerText = new Date().getFullYear();
 
