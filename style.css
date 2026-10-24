@@ -117,7 +117,8 @@ img {
 .profile-img {
     height: 92px;
     width: 92px;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 18px;
     background: linear-gradient(180deg, rgba(11, 99, 182, 0.08), rgba(11, 99, 182, 0.02));
     border: 1px solid rgba(11, 99, 182, 0.09);
